@@ -8,9 +8,18 @@ jobs:
     name: Build Vue
     steps:
     - uses: actions/checkout@v3
-    - id: Build-Vue
-      uses: ashkantaravati/NuxtToGithubPages@v1.0
+    - name: Build and install
+      run: |
+        yarn install
+        yarn build
+    
+    - name: update config
+      run: |
+        echo > .output/public/.nojekyll 
+    
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        username: 'FriendlyUser'
-        reponame: 'business_landing'
-        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: .output/public
