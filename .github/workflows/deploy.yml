@@ -1,0 +1,16 @@
+# deploy nuxt site to github pages
+
+name: Build Vue
+on: [push]
+jobs:
+  build_vue:
+    runs-on: ubuntu-latest
+    name: Build Vue
+    steps:
+    - uses: actions/checkout@v3
+    - id: Build-Vue
+      uses: ashkantaravati/NuxtToGithubPages@v1.0
+      with:
+        username: 'FriendlyUser'
+        reponame: 'business_landing'
+        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
