@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero
+    <Homepage
       title="Digital Consulting Services"
       subtitle="We help businesses succeed online"
       button="Get Started"
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import Hero from '@/components/Hero.vue'
+import Homepage from '~/components/Homepage.vue'
 
 export default {
   components: {
-    Hero
+    Homepage
   },
 }
 </script>

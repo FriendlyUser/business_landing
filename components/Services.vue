@@ -1,7 +1,7 @@
 <template>
   <section class="bg-gray-100 py-12">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-gray-900 mb-4">Features</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Services</h2>
       <div class="flex flex-wrap -mx-4">
         <div class="w-full md:w-1/3 px-4 mb-8">
           <div class="bg-white rounded-lg shadow-md p-6">

@@ -11,12 +11,20 @@
     </div>
   </div>
   <Features />
+  <Tasks />
+  <Cloud />
+  <Knowledge />
+  <Form />
 </div>
 </template>
 
 <script>
 import HomeHero from "./HomeHero.vue";
-import Features from "./Features.vue";
+import Features from "./Services.vue";
+import Tasks from "./Tasks.vue";
+import Cloud from "./Cloud.vue";
+import Knowledge from "./Knowledge.vue";
+import Form from "./Form.vue";
 export default {
   name: 'Hero',
   props: {
@@ -39,7 +47,11 @@ export default {
   },
    components: {
     HomeHero,
-    Features
+    Features,
+    Tasks,
+    Cloud,
+    Knowledge,
+    Form,
   }
 }
 </script>
