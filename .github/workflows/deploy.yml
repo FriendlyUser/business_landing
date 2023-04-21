@@ -11,7 +11,7 @@ jobs:
     - name: Build and install
       run: |
         yarn install
-        yarn build
+        npx nuxt generate
     
     - name: update config
       run: |
